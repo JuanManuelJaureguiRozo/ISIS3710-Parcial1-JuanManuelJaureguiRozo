@@ -1,0 +1,1 @@
+# ISIS3710-Parcial1-JuanManuelJaureguiRozo
