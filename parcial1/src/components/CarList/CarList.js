@@ -3,18 +3,13 @@ import Col from "react-bootstrap/Col";
 import Card from "react-bootstrap/Card";
 import Row from "react-bootstrap/Row";
 import { FormattedMessage } from 'react-intl';
+import './CarList.css';
 
 function CarList() {
 
     const [cars, setCars] = useState([]);
 
     const [selectedCar, setSelectedCar] = useState(null);
-
-    const handleCarClick = (car) => {
-        fetch(`http://localhost:3001/cars/${car.id}`)
-            .then(response => response.json())
-            .then(data => setSelectedCar(data))
-    }
 
     useEffect(() => {
         fetch('http://localhost:3001/cars')
@@ -23,6 +18,12 @@ function CarList() {
     }
         , [])
 
+    const handleCarClick = (car) => {
+        fetch(`http://localhost:3001/cars/${car.id}`)
+            .then(response => response.json())
+            .then(data => setSelectedCar(data))
+    }
+
     return (
         <>
             <Row className="cs-tb-row">
@@ -30,16 +31,16 @@ function CarList() {
                     <table className="table">
                         <thead>
                             <tr>
-                                <th className="cs-tr-titles">
+                                <th>
                                     #
                                 </th>
-                                <th className="cs-tr-titles">
+                                <th>
                                     <FormattedMessage id="Brand"></FormattedMessage>
                                 </th>
-                                <th className="cs-tr-titles">
+                                <th>
                                     <FormattedMessage id="Line"></FormattedMessage>
                                 </th>
-                                <th className="cs-tr-titles">
+                                <th>
                                     <FormattedMessage id="Model"></FormattedMessage>
                                 </th>
                             </tr>
@@ -47,7 +48,7 @@ function CarList() {
                         <tbody>
                             {cars.map((car) => (
                                 <tr key={car.id} onClick={() => handleCarClick(car)} className="car-list">
-                                    <td className='cs-id'>{car.id}</td>
+                                    <td className="cs-id">{car.id}</td>
                                     <td>{car.marca}</td>
                                     <td>{car.linea}</td>
                                     <td>{car.modelo}</td>
@@ -60,25 +61,25 @@ function CarList() {
                     <Col xs={12} md={12} xl={5} xxl={5} className="cs-col d-flex justify-content-center">
                         <Card className="cs-card">
                             <Card.Body className="cs-body">
-                                <Card.Title className='cs-cardTitle'>{selectedCar.nombre}</Card.Title>
+                                <Card.Title className='cs-cardTitle'>{selectedCar.marca} {selectedCar.linea}</Card.Title>
                                 <div className="custom-img">
                                     <Card.Img variant="top" src={selectedCar.imagen} className='cs-img' />
                                 </div>
 
-                                <div className="mb-3">
+                                <div>
                                     <Row>
-                                        <Card.Text>
-                                            <FormattedMessage id="Mileage"></FormattedMessage>: {selectedCar.kilometraje}
+                                        <Card.Text className="cs-text">
+                                        &rarr; <FormattedMessage id="Mileage"></FormattedMessage>: {selectedCar.kilometraje}
                                         </Card.Text>
                                     </Row>
                                     <Row>
-                                        <Card.Text>
-                                            <FormattedMessage id="Color"></FormattedMessage>: {selectedCar.color}
+                                        <Card.Text className="cs-text">
+                                        &rarr; <FormattedMessage id="Color"></FormattedMessage>: {selectedCar.color}
                                         </Card.Text>
                                     </Row>
                                     <Row>
-                                        <Card.Text>
-                                            <FormattedMessage id="Reference"></FormattedMessage>: {selectedCar.referencia}
+                                        <Card.Text className="cs-text">
+                                        &rarr; <FormattedMessage id="Reference"></FormattedMessage>: {selectedCar.referencia}
                                         </Card.Text>
                                     </Row>
                                 </div>

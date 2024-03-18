@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Jaldi:wght@400;700&display=swap');
+
+.cs-h1-header {
+  font-family: "Jaldi";
+  font-size: 36px;
+  font-weight: normal;
+  line-height: 22.52px;
+  margin-left: 0.1rem;
+  text-shadow: 0px 5px 4px rgba(0, 0, 0, 0.25);
+
+  -webkit-text-fill-color: black;
+  -webkit-text-stroke-width: 2.5px;
+  -webkit-text-stroke-color: black;
+}
+
+.hr-row {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin-top: 0.5rem;
+  }
+
+.cs-hr {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 0.5rem;
+  width: 97.5%;
+}
+
+.cs-image {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.cs-hr2 {
+  justify-content: center;
+  align-items: center;
+  margin-top: 10rem;
+  margin-bottom: 3rem;
+  width: 97.5%;
+}

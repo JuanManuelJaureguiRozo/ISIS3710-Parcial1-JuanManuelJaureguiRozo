@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap');
+
+.cs-row-sesion{
+    padding-bottom: 10px;
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 1000;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
+    -webkit-text-fill-color: black;
+  }
+
+  .cs-row {
+    background-color: #ffffff;
+    border-radius: 0;
+    border-color: black;
+    border-radius: 0px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.3);
+  }
+
+  .cs-card-body {
+    padding-left: 80px;
+    padding-right: 80px;
+    padding-top: 20px;
+  }
+
+  .cs-username {
+    font-family: "Inter";
+    font-size: 32px;
+    font-weight: 2000;
+
+    -webkit-text-fill-color: black;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
+  }
+
+  .custom-textbox {
+    background-color: #ccc; 
+    border: none; 
+    border-radius: 0; 
+    padding: 12px 12px; 
+    width: 100%; 
+    margin-bottom: 10px;
+    margin-top: 10px;
+  }
+
+  .cs-row-buttons{
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .cs-sign-button{
+    background-color: #003B93;
+    color: white;
+    font-weight: bold;
+    border-radius: 0;
+    border: 0;
+    padding: 10px 20px;
+    width: 100%
+  }
+
+  .cs-logout-button{
+    background-color: #E75D5D;
+    color: black;
+    border-radius: 0;
+    font-weight: bold;
+    border: 0;
+    padding: 10px 20px;
+    width: 100%
+  }
+
+.error-cs {
+    color: #cd3232 !important;
+    font-weight: bold;
+    margin-top: -15px;
+  }

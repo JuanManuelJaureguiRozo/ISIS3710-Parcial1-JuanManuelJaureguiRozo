@@ -1,0 +1,50 @@
+.cs-tb-row{
+    padding-left: 0.28rem;
+  }
+  
+  .car-list {
+    cursor: pointer;
+  }
+
+  .cs-id{
+    font-weight: bold;
+    padding-right: 30px !important;
+  }
+
+  .cs-card {
+    max-width: 100rem;
+    border-radius: 0;
+    border: 2px solid black;
+  }
+
+  .cs-body {
+    text-align: center;
+    background-color: #D9D9D9;
+    padding: 0;
+    border-radius: 0;
+    border: 1px solid black;
+  }
+  
+  .cs-cardTitle{
+    text-transform: capitalize;
+    font-weight: 900;
+    font-size: 1rem;
+    margin-top: 5px;
+  }
+
+  .custom-img{
+    max-width: 100%;
+    height: auto;
+  }
+
+  .cs-img{
+    width: 45%;
+    height: auto;
+    margin-bottom: 20px;
+  }
+
+  .cs-text {
+    text-align: left;
+    margin-top: 2px;
+    font-weight: 480;
+  }
