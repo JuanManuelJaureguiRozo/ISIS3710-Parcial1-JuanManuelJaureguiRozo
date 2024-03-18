@@ -30,7 +30,7 @@ function CarList() {
                 <Col xs={12} md={12} xl={7} xxl={7}>
                     <table className="table">
                         <thead>
-                            <tr>
+                            <tr className="gray-background">
                                 <th>
                                     #
                                 </th>

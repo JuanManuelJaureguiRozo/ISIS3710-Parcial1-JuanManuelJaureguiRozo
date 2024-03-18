@@ -2,6 +2,11 @@
     padding-left: 0.28rem;
   }
   
+  .gray-background {
+    background-color: #333A40;
+    color: white;
+  }
+
   .car-list {
     cursor: pointer;
   }
